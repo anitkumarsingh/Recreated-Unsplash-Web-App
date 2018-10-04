@@ -1,0 +1,30 @@
+.grid__item {
+    margin: 0 10px 20px;
+    flex: 1 1 290px;
+  }
+
+  .card {
+    background-color: #fff;
+    overflow: hidden;
+    box-shadow: 12px 15px 20px rgba(0, 0, 0, 0.1);
+    transition: 0.2s box-shadow ease-in-out, 0.2s background-color ease-in-out, 0.2s border-color ease-in-out;
+    border-radius: 2px;
+    line-height: 0;
+    cursor: pointer;
+    border: 1px solid #ccc;
+  }
+  
+  .card:hover {
+    box-shadow: 0 3px 6px rgba(0,0,0,.2)
+  }
+
+  .grid {
+    width: 100%;
+    max-width: 1280px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 0;
+    list-style-type: none;
+  }
