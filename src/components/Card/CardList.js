@@ -1,10 +1,11 @@
 import React from 'react';
 import Card from './Card';
-import NoImgs from './ContentLess';
+import NoContent from './ContentLess';
 import './CardList.css';
 
 const CardList = props => {
 	const results = props.data;
+	// testing  what I get from props and console logging
 	console.log(props.data);
 	let imgs;
 	if (results.length > 0) {
@@ -19,9 +20,9 @@ const CardList = props => {
 				link={img.links.html}
 				key={img.id}
 			/>
-		);
+		   );
 	} else {
-		imgs = <NoImgs />;
+		imgs = <NoContent />;
 	}
 	return (
 		<ul className="grid">
