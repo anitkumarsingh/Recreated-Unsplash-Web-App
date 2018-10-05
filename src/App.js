@@ -25,9 +25,9 @@ class App extends Component {
 	SearchPerforming = (query = 'rose') => {
 		axios
 			.get(
-				`https://api.unsplash.com/search/photos/?page=1&per_page=20&query=${query}&client_id=${'70693869dfbdd08a6432da34ad8bb3627f764b7fb58ca8c9062ada573c46ec25'}`
+				`https://api.unsplash.com/search/photos/?page=1&per_page=20&query=${query}&client_id=${'App_ID'}`
 			)
-      //  fetch(`https://api.unsplash.com/search/photos/?page=1&per_page=10&query=${query}&client_id=${'70693869dfbdd08a6432da34ad8bb3627f764b7fb58ca8c9062ada573c46ec25'}`)
+      //  fetch(`https://api.unsplash.com/search/photos/?page=1&per_page=10&query=${query}&client_id=${'App_ID'}`)
 			.then(data => {
 				// console.log(data);
 				// console.log(data.data.results[0].likes);
