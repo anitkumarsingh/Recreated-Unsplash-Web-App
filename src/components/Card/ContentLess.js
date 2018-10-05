@@ -3,7 +3,7 @@ import React from 'react';
 const ContentLess = props => (
   // omitted return keyword , fat arrow function
   <li className='no-imgs'>
-    <h1>I'm sorry for dispointment</h1>
+    <h1>I am sorry for dispointment</h1>
     <h3>No Images match your search.</h3>
   </li>
 );
