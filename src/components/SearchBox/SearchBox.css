@@ -14,13 +14,9 @@
     margin-right: auto;
     width:60%;
     position: relative;
-    top:35%;
-   
-    
+    top:35%;   
 }
-form{
-    
-}
+
 input[type="search"]{
   width: 90%;
   padding: 20px;
@@ -41,6 +37,8 @@ input[type="search"]{
     color:white;
     font-size:20px;
 }
+
+/* for small device  */
 @media screen and (max-width:300px){
     .welcomeText{
         font-size: larger;
