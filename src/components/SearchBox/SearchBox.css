@@ -41,3 +41,25 @@ input[type="search"]{
     color:white;
     font-size:20px;
 }
+@media screen and (max-width:300px){
+    .welcomeText{
+        font-size: larger;
+        font-weight:bolder;
+    }
+    .specialText{
+        font-size: large;
+        color:white;
+    }
+    .subTitle{
+        color:white;
+        font-size: medium;
+    }
+    input[type="search"]{
+        width: 90%;
+        padding: 10px!important;
+        border:2px solid pink;
+        border-radius: 10px;
+        box-shadow: 12px 15px 20px 10px rgba(0, 0, 0, 0.1);
+        transition: 0.2s box-shadow ease-in-out, 0.2s background-color ease-in-out, 0.2s border-color ease-in-out;
+      }
+}

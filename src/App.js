@@ -44,6 +44,7 @@ class App extends Component {
       <div>
       <Header/>
       <SearchBox onSearch={this.SearchPerforming}/>
+			<h1 className="searchText">Your Search Results</h1>
       <div className="main-content">
 					{this.state.loadingStatus
 						? <p>Loading Please wait...</p>
