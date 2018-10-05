@@ -9,9 +9,9 @@ const CardList = props => {
 	const results = props.data;
 	// testing  what I get from props and console logging
 	// console.log(props.data);
-	let imgs;
+	let pic;
 	if (results.length > 0) {
-		imgs = results.map(img =>
+		pic = results.map(img =>
 			<Card
 				url={img.urls.thumb}
 				user={img.user.links.html}
@@ -24,11 +24,11 @@ const CardList = props => {
 			/>
 		   );
 	} else {
-		imgs = <NoContent />;
+		pic = <NoContent />;
 	}
 	return (
 		<ul className="grid">
-			{imgs}
+			{pic}
 		</ul>
 	);
 };

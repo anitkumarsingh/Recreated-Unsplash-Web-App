@@ -25,7 +25,7 @@ class App extends Component {
 	SearchPerforming = (query = 'rose') => {
 		axios
 			.get(
-				`https://api.unsplash.com/search/photos/?page=1&per_page=20&query=${query}&client_id=${'App_ID'}`
+				`https://api.unsplash.com/search/photos/?page=1&per_page=20&query=${query}&client_id=${'70693869dfbdd08a6432da34ad8bb3627f764b7fb58ca8c9062ada573c46ec25'}`
 			)
       //  fetch(`https://api.unsplash.com/search/photos/?page=1&per_page=10&query=${query}&client_id=${'App_ID'}`)
 			.then(data => {
@@ -38,7 +38,6 @@ class App extends Component {
 			});
 	};
 
-  
   render() {
     return (
       <div>
@@ -47,7 +46,7 @@ class App extends Component {
 			<h1 className="searchText">Your Search Results</h1>
       <div className="main-content">
 					{this.state.loadingStatus
-						? <p className="loading__message">Loading Please wait...</p>
+						? <p>Loading Please wait...</p>
 						: <CardList data={this.state.imgs_array} />}
 				</div>
        <Footer/>
