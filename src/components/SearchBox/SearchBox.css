@@ -27,5 +27,17 @@ input[type="search"]{
   border:2px solid pink;
   border-radius: 10px;
   box-shadow: 12px 15px 20px 10px rgba(0, 0, 0, 0.1);
-    transition: 0.2s box-shadow ease-in-out, 0.2s background-color ease-in-out, 0.2s border-color ease-in-out;
+  transition: 0.2s box-shadow ease-in-out, 0.2s background-color ease-in-out, 0.2s border-color ease-in-out;
+}
+.welcomeText{
+    color: #ee6488;
+    font-weight:bolder;
+}
+.specialText{
+    font-size:25px;
+    color:white;
+}
+.subTitle{
+    color:white;
+    font-size:20px;
 }

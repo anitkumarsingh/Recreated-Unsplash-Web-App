@@ -20,9 +20,8 @@ class SearchBox extends Component{
   render(){
     return(
           <div className="search-container">
-          
             <div className="search-box">
-            <h1 style={{color:'#ee6488',fontWeight:'bolder'}}>Welcome,to <span style={{fontSize:'25px',color:'white'}}>photos search engine</span></h1>
+            <h1 className="welcomeText">Welcome,to <span className="specialText">photos search engine</span></h1>
             <form onSubmit={this.handleSubmit}>
               <input type="search" placeholder="Type to search and hit enter key..." 
                 onChange={this.onSearchChange}
@@ -30,7 +29,7 @@ class SearchBox extends Component{
                 name="search"
               />
               </form>
-              <p style={{color:'white',fontSize:'22px;'}}>Search anything: Computer, love, rose ...</p>
+              <p className="subTitle">Search anything: Computer, love, rose ...</p>
             </div>
           </div>
      )
