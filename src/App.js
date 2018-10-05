@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-// importing css
+// importing css file
 import './App.css';
 // importing components
 import Header from './components/Header/Header';
@@ -47,7 +47,7 @@ class App extends Component {
 			<h1 className="searchText">Your Search Results</h1>
       <div className="main-content">
 					{this.state.loadingStatus
-						? <p>Loading Please wait...</p>
+						? <p className="loading__message">Loading Please wait...</p>
 						: <CardList data={this.state.imgs_array} />}
 				</div>
        <Footer/>

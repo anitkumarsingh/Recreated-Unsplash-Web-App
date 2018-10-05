@@ -45,3 +45,6 @@
   width: 50%;
   border-bottom: 2px solid red;
 }
+.loading__message{
+  text-align: center;
+}
