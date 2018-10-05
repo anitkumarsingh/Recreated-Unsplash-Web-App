@@ -29,8 +29,8 @@ class App extends Component {
 			)
       //  fetch(`https://api.unsplash.com/search/photos/?page=1&per_page=10&query=${query}&client_id=${'70693869dfbdd08a6432da34ad8bb3627f764b7fb58ca8c9062ada573c46ec25'}`)
 			.then(data => {
-				console.log(data);
-				console.log(data.data.results[0].likes);
+				// console.log(data);
+				// console.log(data.data.results[0].likes);
 				this.setState({ imgs_array: data.data.results, loadingStatus: false });
 			})
 			.catch(err => {

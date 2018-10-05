@@ -8,7 +8,7 @@ const Footer = () =>{
         <div className="useLess">
         <div className="footer-box">
         <img className="myPic" src={myPicture} width="20%" height="auto" alt="" />
-            <p className="footer-text"style={{textAlign: '-webkit-center', fontSize:'22px',color:'white'}}>
+            <p className="footer-text">
               &copy;2018 Build By Anit Kumar
             </p>
         </div>
