@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
+// importing css
 import './App.css';
+// importing components
 import Header from './components/Header/Header';
 import SearchBox from './components/SearchBox/SearchBox';
 import axios from 'axios';
@@ -7,13 +9,11 @@ import CardList from './components/Card/CardList';
 import Footer from './components/Footer/Footer';
 
 
-
-
 class App extends Component {
   constructor() {
 		super();
 		this.state = {
-			imgs_array: [],
+			imgs_array: [], //declare array to store data fetched from external server
 			loadingStatus: true
 		};
 	}

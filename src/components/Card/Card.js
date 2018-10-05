@@ -1,4 +1,5 @@
 import React from 'react';
+// importing css file and image
 import './Card.css';
 import likes from '../../Images/thumbsUp.png';
 

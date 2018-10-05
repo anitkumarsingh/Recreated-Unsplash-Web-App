@@ -1,12 +1,14 @@
 import React from 'react';
+// Importing components
 import Card from './Card';
 import NoContent from './ContentLess';
+// Importing css file
 import './CardList.css';
 
 const CardList = props => {
 	const results = props.data;
 	// testing  what I get from props and console logging
-	console.log(props.data);
+	// console.log(props.data);
 	let imgs;
 	if (results.length > 0) {
 		imgs = results.map(img =>
